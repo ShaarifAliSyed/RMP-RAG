@@ -1,0 +1,125 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. Jane Smith",
+        "subject": "Physics 101",
+        "stars": 4,
+        "review": "Dr. Smith explains concepts clearly, but her exams are quite challenging."
+      },
+      {
+        "professor": "Dr. John Doe",
+        "subject": "Mathematics 201",
+        "stars": 5,
+        "review": "Excellent professor! Makes difficult topics easy to understand."
+      },
+      {
+        "professor": "Dr. Emily Johnson",
+        "subject": "Chemistry 101",
+        "stars": 3,
+        "review": "Dr. Johnson is knowledgeable, but sometimes goes too fast during lectures."
+      },
+      {
+        "professor": "Dr. Mark Wilson",
+        "subject": "History 202",
+        "stars": 2,
+        "review": "His lectures are dry, and he doesn't engage the class much."
+      },
+      {
+        "professor": "Dr. Sarah Brown",
+        "subject": "English Literature 150",
+        "stars": 5,
+        "review": "Her passion for literature is contagious, and she encourages great class discussions."
+      },
+      {
+        "professor": "Dr. Robert Davis",
+        "subject": "Biology 101",
+        "stars": 4,
+        "review": "Very knowledgeable, but his grading can be a bit harsh."
+      },
+      {
+        "professor": "Dr. Laura Garcia",
+        "subject": "Philosophy 101",
+        "stars": 5,
+        "review": "Incredible professor who makes you think deeply about the material."
+      },
+      {
+        "professor": "Dr. William Martinez",
+        "subject": "Computer Science 101",
+        "stars": 3,
+        "review": "He knows his stuff, but his teaching style is not very engaging."
+      },
+      {
+        "professor": "Dr. Jessica Lee",
+        "subject": "Art History 101",
+        "stars": 4,
+        "review": "Dr. Lee is passionate about art, but sometimes goes off on tangents."
+      },
+      {
+        "professor": "Dr. James Clark",
+        "subject": "Political Science 101",
+        "stars": 2,
+        "review": "He doesn't provide clear explanations, making it hard to follow along."
+      },
+      {
+        "professor": "Dr. Olivia Taylor",
+        "subject": "Psychology 101",
+        "stars": 5,
+        "review": "Fantastic professor! Makes every class interesting and relevant."
+      },
+      {
+        "professor": "Dr. Benjamin Harris",
+        "subject": "Sociology 201",
+        "stars": 4,
+        "review": "Great professor with interesting insights, but his exams are tough."
+      },
+      {
+        "professor": "Dr. Megan Walker",
+        "subject": "Economics 101",
+        "stars": 3,
+        "review": "She's knowledgeable, but her lectures can be monotonous."
+      },
+      {
+        "professor": "Dr. Richard White",
+        "subject": "Anthropology 101",
+        "stars": 4,
+        "review": "Very engaging and well-organized lectures. I learned a lot."
+      },
+      {
+        "professor": "Dr. Emma Hall",
+        "subject": "Environmental Science 101",
+        "stars": 5,
+        "review": "Dr. Hall is passionate about the environment and makes the subject fascinating."
+      },
+      {
+        "professor": "Dr. Alexander Young",
+        "subject": "Statistics 101",
+        "stars": 3,
+        "review": "He knows the material well, but his lectures are a bit dry."
+      },
+      {
+        "professor": "Dr. Ava King",
+        "subject": "Engineering 101",
+        "stars": 4,
+        "review": "Dr. King is a great professor, but she moves through the material quickly."
+      },
+      {
+        "professor": "Dr. Michael Adams",
+        "subject": "Marketing 101",
+        "stars": 2,
+        "review": "His lectures lack structure and can be confusing at times."
+      },
+      {
+        "professor": "Dr. Sophia Wright",
+        "subject": "Music Theory 101",
+        "stars": 5,
+        "review": "Amazing professor with a deep understanding of music. Highly recommend!"
+      },
+      {
+        "professor": "Dr. Daniel Green",
+        "subject": "Astronomy 101",
+        "stars": 4,
+        "review": "Interesting lectures, but his exams are harder than expected."
+      }
+    ]
+  }
+  
