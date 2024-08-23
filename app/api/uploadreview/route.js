@@ -62,5 +62,5 @@ export async function POST() {
     console.error("Error uploading to Pinecone:", error);
   }
 
-  return NextResponse(processed_data);
+  return new NextResponse(processed_data);
 }
