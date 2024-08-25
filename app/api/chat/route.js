@@ -152,9 +152,6 @@ export async function POST(req) {
 
     const response = await completion.response;
     const output = await response.text()
-    .replace(/\*/g, "")
-    .replace(/Query:.*?\n/, "") // Remove the query part until \n char
-    .replace(/(\d+\.\s)/g, "\n$1") // Add line breaks before each numbered entry
 
     return NextResponse.json({ content: output });
   } catch (error) {

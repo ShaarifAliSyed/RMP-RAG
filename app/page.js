@@ -41,7 +41,10 @@ export default function Home() {
         const updatedMessages = [...prevMessages];
         updatedMessages[updatedMessages.length - 1] = {
           role: "assistant",
-          content: data.content,
+          content: data.content
+          .replace(/\*/g, "")
+          .replace(/Query:.*?\n/, "") // Remove the query part until \n char
+          .replace(/(\d+\.\s)/g, "\n$1") // Add line breaks before each numbered entry,
         };
         return updatedMessages;
       });
@@ -118,8 +121,43 @@ export default function Home() {
                 color="white"
                 borderRadius={16}
                 p={3}
+                sx={{ whiteSpace: "pre-wrap", overflowWrap: "break-word" }} // This will ensure the text formatting is preserved.
               >
-                {message.content}
+                {message.content
+                .replace(/\*/g, "") // Remove any asterisks from the content
+                .replace(/Query:.*?\n/, "") // Remove the query part until the newline character
+                .split("\n")
+                .map((line, i) => {
+                  if (line.trim().startsWith("- Review:")) {
+                    return (
+                      <Box key={i} sx={{ textIndent: "0", paddingLeft: "1em" }}>
+                        {line.trim()}
+                      </Box>
+                    );
+                  } else if (line.trim().startsWith("Note:")) {
+                    // Add spacing before "Note:" and apply specific styling
+                    return (
+                      <Box key={i} sx={{ marginTop: "1em" }}>
+                        {line.trim()}
+                      </Box>
+                    );
+                  } else if (line.trim().startsWith("-")) {
+                    return (
+                      <Box key={i} sx={{ textIndent: "0", paddingLeft: "1em" }}>
+                        {line.trim()}
+                      </Box>
+                    );
+                  } else if (line.trim().match(/^\d+\./)) {
+                    // Ensure proper spacing before each numbered entry
+                    return (
+                      <Box key={i} sx={{ marginTop: "1em" }}>
+                        {line.trim()}
+                      </Box>
+                    );
+                  } else {
+                    return <Box key={i}>{line.trim()}</Box>;
+                  }
+                })}
               </Box>
             </Box>
           ))}
